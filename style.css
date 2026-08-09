@@ -149,12 +149,13 @@ ul {
 
 /* Navbar */
 .navbar {
-  display: flex;
+  display: none;
   justify-content: space-between;
   align-items: center;
   padding: 20px 8%;
   background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(10px);
+  position: sticky;
 }
 
 .logo {
@@ -162,23 +163,15 @@ ul {
   align-items: center;
 }
 
-.brand-logo {
-  height: 60px;            /* Adjust height to fit navbar smoothly */
-  width: auto;
-  border-radius: 50%;      /* Keeps the circular shape clean */
-  object-fit: contain;
-  transition: transform 0.2s ease;
-}
-
-.brand-logo:hover {
-  transform: scale(1.05);
-}
-
-/* Footer Logo Adjustment */
-.footer-logo {
-  height: 55px;            /* Slightly larger for footer prominence */
-  background-color: #fff;  /* Optional: gives background contrast if needed */
-  padding: 2px;
+.logo-icon {
+  background: var(--primary-blue);
+  color: #fff;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .logo-text {
@@ -193,11 +186,6 @@ ul {
   font-size: 0.6rem;
   color: var(--accent-orange);
   letter-spacing: 1px;
-}
-
-.RTS{
-  color: #06b6d4;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 
@@ -713,4 +701,8 @@ ul {
   .gallery-item.main-item {
     grid-row: span 1;
   }
+}
+
+.your{
+  background-color: rgb(179, 213, 245);
 }
